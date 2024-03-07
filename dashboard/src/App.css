@@ -25,4 +25,14 @@ body {
     border: 0.1em solid;
     border-radius: 50%;
     background-color: rgba(255, 127, 80);
+    position: relative;
+}
+.widget--clock__analog .middle {
+    height: 1.25em;
+    width: 1.25em;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 7.1875em;
+    left: 7.1875em;
 }
