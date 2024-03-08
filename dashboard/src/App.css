@@ -2,6 +2,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     color: rgba(0, 0, 0);
+    --primary-color: rgba(255, 127, 80);
 }
 
 .widget--clock__digital {
@@ -15,7 +16,7 @@ body {
     width: 15.625em;
     border-radius: 0.9em;
     padding: 0.625em 0;
-    background-color: rgba(255, 127, 80);
+    background-color: var(--primary-color);
     box-shadow: rgb(0, 0, 0, 0.35) 0em 0.1em 0.9em;
 }
 
@@ -24,7 +25,7 @@ body {
     width: 15.625em;
     border: 0.1em solid;
     border-radius: 50%;
-    background-color: rgba(255, 127, 80);
+    background-color: var(--primary-color);
     position: relative;
 }
 .widget--clock__analog .middle {
@@ -35,4 +36,29 @@ body {
     position: absolute;
     top: 7.1875em;
     left: 7.1875em;
+}
+
+.analog__hand--minute {
+    height: 7em;
+    width: .25em;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 7.7em;
+    top: 0.9em;
+}
+.analog__hand--hour {
+    height: 5em;
+    width: .25em;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 7.7em;
+    top: 2.2em;
+}
+.analog__hand--second {
+    height: 4em;
+    width: .25em;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 7.7em;
+    top: 3.2em;
 }
