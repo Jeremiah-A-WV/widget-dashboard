@@ -1,13 +1,16 @@
 import './App.css';
-import AnalogClock from './components/AnalogClock';
+import LightDarkButton from './components/LightDarkButton';
 import DigitalClock from './components/DigitalClock';
+// import Draggable from 'react-draggable';
 
 function App() {
   return (
-    <div>
-      <DigitalClock />
-      <AnalogClock />
-    </div>
+    // <Draggable>
+      <div>
+        <LightDarkButton />
+        <DigitalClock />
+      </div>
+    // </Draggable>
   );
 }
 
