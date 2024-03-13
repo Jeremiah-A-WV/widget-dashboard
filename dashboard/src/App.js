@@ -1,7 +1,7 @@
 import './App.css';
 import LightDarkButton from './components/LightDarkButton';
 import DigitalClock from './components/DigitalClock';
-// import Draggable from 'react-draggable';
+import Timer from './components/Timer';
 
 function App() {
   return (
@@ -9,8 +9,8 @@ function App() {
       <div>
         <LightDarkButton />
         <DigitalClock />
+        <Timer />
       </div>
-    // </Draggable>
   );
 }
 
